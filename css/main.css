@@ -1,0 +1,32 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+nav {
+    padding: 16px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     background-color: black;
+     
+     
+    }
+    
+    .logo{
+       color:rgb(255, 254, 254);
+       text-decoration: none;
+      border-style: solid; 
+      padding: 16px;
+    
+    }
+    
+    .nav ul{ list-style-type: none;}
+    
+    nav ul li a{
+        display: inline-block;
+        padding: 8px;
+        margin: 0 4px;
+        color: rgb(255, 255, 255);
+    }
+    
