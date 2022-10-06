@@ -5,7 +5,7 @@ body{
 nav {
     padding: 16px;
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
      justify-content: space-between;
      align-items: center;
      background-color: black;
@@ -14,9 +14,9 @@ nav {
     }
     
     .logo{
+        border: solid 4px;
        color:rgb(255, 254, 254);
-       text-decoration: none;
-      border-style: solid; 
+       text-decoration: none; 
       padding: 16px;
     
     }
@@ -30,3 +30,30 @@ nav {
         color: rgb(255, 255, 255);
     }
     
+main{
+    background-color: brown;
+    justify-content: center;
+
+    display: grid;
+    grid-area:
+    "main"
+    "main-dos"
+    ;
+}
+
+.main{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.main-dos{
+    grid-area: main-dos;
+    display:contents;
+    justify-content: center;
+    align-items: center;
+    
+
+}
