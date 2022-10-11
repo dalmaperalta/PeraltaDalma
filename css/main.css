@@ -1,6 +1,6 @@
 body{
     font-family: sans-serif;
-    
+    min-height: 100vh;
     
     
 }
@@ -84,7 +84,7 @@ header .lp{
         padding: 20px 20px;
          display: grid;
          grid-template-areas: 
-         "main-uno"
+         "main-uno "
          "canciones"
          ;
     }
@@ -200,7 +200,10 @@ main .serv{
 
 footer{
     background-color: rgb(141, 141, 141);
-    padding: 10px 20px;}
+    padding: 10px 20px;
+width: 100%;
+}
+    
     
     
 
@@ -214,4 +217,57 @@ footer{
 }
 
 
+
+@media screen and (min-width: 768px){ 
+    nav{ 
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul li a{
+        display: inline-block;
+        text-align: center;
+        padding: 8px;
+        margin:0 08px;
+        font-size: 1em;        
+    }
+
+    
+    main{
+        
+         display: grid;
+         grid-template-areas: 
+         "main-uno main-uno"
+         "canciones"
+        
+         ;
+    }
+
+    .titulo{
+        font-size: 60px;
+    
+    }
+
+}
+
+@media screen and (min-width: 124px){
+    main .serv{
+        display:flex;
+        flex-direction: row;  
+    }
+
+    .serv .serv-dos{
+        padding: 10px;
+        flex-direction:row;
+        padding: 10px;
+        margin: 10px;
+    }
+     main .titulo-serv{
+      flex-direction: column;
+      padding: 10px;
+    
+    }
+
+}
 
